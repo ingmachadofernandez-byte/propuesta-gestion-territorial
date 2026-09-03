@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>De la Actividad al Impacto Territorial | Propuesta Institucional UTL</title>
+  <title>De la Actividad al Impacto Territorial | Propuesta Ejecutiva UTL</title>
   
-  <!-- Metadatos Ejecutivos y Open Graph -->
-  <meta name="description" content="Propuesta técnica de fortalecimiento institucional para la gestión territorial desde la UTL: proyectos, portafolio, PMO Ágil, datos e IA como asistentes de gestión.">
-  <meta property="og:title" content="De la Actividad al Impacto Territorial | Modelo UTL">
-  <meta property="og:description" content="Gestionar las iniciativas sociales y políticas como proyectos. Un modelo de decisión estratégica y valor social comprobable.">
+  <!-- Metadatos Ejecutivos para WhatsApp / Redes -->
+  <meta name="description" content="Propuesta ejecutiva de gestión territorial: transformar necesidades del territorio en proyectos priorizados y resultados medibles.">
+  <meta property="og:title" content="De la Actividad al Impacto Territorial">
+  <meta property="og:description" content="Gestionar las iniciativas sociales y políticas como proyectos. Propuesta ejecutiva para la UTL.">
   <meta property="og:type" content="website">
 
   <!-- Tipografía Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -41,8 +41,7 @@
       --radius-md: 10px;
       --radius-lg: 16px;
       --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
-      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
     }
 
     * {
@@ -60,21 +59,20 @@
       font-family: var(--font-family);
       color: var(--text-main);
       background-color: var(--bg-main);
-      line-height: 1.6;
+      line-height: 1.5;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Tipografía y Jerarquía */
     h1, h2, h3, h4 {
       color: var(--brand-primary);
       font-weight: 700;
-      line-height: 1.25;
+      line-height: 1.2;
       letter-spacing: -0.02em;
     }
 
     p {
       color: var(--text-muted);
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     a {
@@ -84,13 +82,13 @@
 
     .container {
       width: 100%;
-      max-width: 1160px;
+      max-width: 1040px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 0 1.25rem;
     }
 
     .section {
-      padding: 5rem 0;
+      padding: 3.5rem 0;
     }
 
     .section-alt {
@@ -113,13 +111,13 @@
     .badge {
       display: inline-flex;
       align-items: center;
-      padding: 0.35rem 0.85rem;
+      padding: 0.25rem 0.75rem;
       border-radius: 9999px;
-      font-size: 0.75rem;
-      font-weight: 600;
+      font-size: 0.7rem;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
 
     .badge-primary {
@@ -133,15 +131,9 @@
       border: 1px solid rgba(56, 189, 248, 0.3);
     }
 
-    .badge-warning {
-      background-color: #FEF3C7;
-      color: #92400E;
-      border: 1px solid #FCD34D;
-    }
-
     .section-header {
-      margin-bottom: 3.5rem;
-      max-width: 820px;
+      margin-bottom: 2rem;
+      max-width: 760px;
     }
 
     .section-header.center {
@@ -151,12 +143,12 @@
     }
 
     .section-header h2 {
-      font-size: 2.15rem;
-      margin-bottom: 1rem;
+      font-size: 1.85rem;
+      margin-bottom: 0.5rem;
     }
 
     .section-header p {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
 
     /* Botones */
@@ -164,8 +156,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0.85rem 1.6rem;
-      font-size: 0.95rem;
+      padding: 0.75rem 1.4rem;
+      font-size: 0.9rem;
       font-weight: 600;
       border-radius: var(--radius-sm);
       transition: all 0.2s ease;
@@ -191,16 +183,6 @@
 
     .btn-secondary:hover {
       background-color: var(--bg-alt);
-      border-color: var(--text-muted);
-    }
-
-    .btn-white {
-      background-color: #FFFFFF;
-      color: var(--brand-primary);
-    }
-
-    .btn-white:hover {
-      background-color: #F1F5F9;
     }
 
     /* Navegación Fija */
@@ -208,11 +190,10 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background-color: rgba(255, 255, 255, 0.96);
+      background-color: rgba(255, 255, 255, 0.97);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border-color);
-      padding: 0.9rem 0;
-      transition: all 0.2s ease;
+      padding: 0.75rem 0;
     }
 
     .navbar-container {
@@ -223,30 +204,29 @@
 
     .nav-brand {
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: var(--brand-primary);
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.4rem;
     }
 
     .nav-brand span {
-      display: inline-block;
       width: 8px;
       height: 8px;
       background-color: var(--brand-accent);
       border-radius: 50%;
+      display: inline-block;
     }
 
     .nav-menu {
       display: flex;
-      align-items: center;
-      gap: 1.75rem;
+      gap: 1.5rem;
       list-style: none;
     }
 
     .nav-link {
-      font-size: 0.875rem;
+      font-size: 0.85rem;
       font-weight: 500;
       color: var(--text-muted);
       transition: color 0.15s ease;
@@ -256,798 +236,407 @@
       color: var(--brand-accent);
     }
 
-    .nav-cta {
-      font-size: 0.85rem;
-      padding: 0.5rem 1.1rem;
-    }
-
-    /* HERO */
+    /* BLOQUE 1: HERO */
     .hero {
-      padding: 5rem 0 4rem;
+      padding: 3.5rem 0 3rem;
       background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
       border-bottom: 1px solid var(--border-color);
     }
 
     .hero-content {
-      max-width: 890px;
+      max-width: 840px;
       margin: 0 auto;
       text-align: center;
     }
 
     .hero h1 {
-      font-size: 2.85rem;
-      line-height: 1.15;
-      margin-bottom: 1.25rem;
+      font-size: 2.4rem;
+      margin-bottom: 0.75rem;
       color: var(--brand-primary);
-    }
-
-    .hero h1 span {
-      color: var(--brand-accent);
     }
 
     .hero-thesis {
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       font-weight: 600;
-      color: var(--brand-primary);
-      margin-bottom: 1.25rem;
-      line-height: 1.35;
-    }
-
-    .hero-narrative {
-      max-width: 760px;
-      margin: 0 auto 2.25rem;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      text-align: left;
-    }
-
-    .narrative-item {
-      background: #FFFFFF;
-      padding: 0.85rem 1rem;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border-color);
-    }
-
-    .narrative-item .n-label {
-      font-size: 0.68rem;
-      text-transform: uppercase;
-      font-weight: 700;
       color: var(--brand-accent);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.75rem;
     }
 
-    .narrative-item .n-desc {
-      font-size: 0.8rem;
-      color: var(--text-main);
-      line-height: 1.3;
+    .hero-summary {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1.75rem;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .hero-actions {
       display: flex;
       justify-content: center;
-      gap: 1rem;
-      margin-bottom: 2.5rem;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
       flex-wrap: wrap;
     }
 
-    /* Columna Vertebral Conceptual: Cadena de Valor Territorial */
-    .pipeline-wrapper {
-      margin-top: 1.5rem;
-      padding: 2rem 1.75rem;
-      background-color: #FFFFFF;
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-md);
-    }
-
-    .pipeline-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--brand-accent);
-      margin-bottom: 0.5rem;
-      text-align: center;
-    }
-
-    .pipeline-subtitle {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      text-align: center;
-      max-width: 780px;
-      margin: 0 auto 1.75rem;
-    }
-
-    .pipeline-grid {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 0.5rem;
-      position: relative;
-    }
-
-    .pipeline-step {
-      text-align: center;
-      position: relative;
-    }
-
-    .pipeline-node {
-      height: 44px;
+    /* Flujo visual del Hero */
+    .hero-flow {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: var(--bg-alt);
+      gap: 0.5rem;
+      background: #FFFFFF;
       border: 1px solid var(--border-color);
-      border-radius: var(--radius-sm);
-      font-size: 0.82rem;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      max-width: 820px;
+      margin: 0 auto;
+      overflow-x: auto;
+    }
+
+    .flow-tag {
+      font-size: 0.75rem;
       font-weight: 600;
       color: var(--brand-primary);
-      transition: all 0.2s ease;
+      padding: 0.35rem 0.65rem;
+      background: var(--bg-alt);
+      border-radius: 4px;
+      white-space: nowrap;
     }
 
-    .pipeline-step.highlight .pipeline-node {
-      background-color: var(--brand-accent);
-      color: #FFFFFF;
-      border-color: var(--brand-accent);
-      box-shadow: 0 2px 8px rgba(2, 128, 144, 0.25);
+    .flow-tag.highlight {
+      background: var(--brand-accent-light);
+      color: var(--brand-accent);
+      font-weight: 700;
     }
 
-    .pipeline-step:not(:last-child)::after {
-      content: "→";
-      position: absolute;
-      right: -0.55rem;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 0.85rem;
+    .flow-arrow {
       color: var(--text-muted);
-      z-index: 2;
+      font-size: 0.75rem;
     }
 
-    /* SECCIÓN: EL RETO Y COMPARACIÓN HOY VS PROPUESTA */
-    .challenge-container {
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-    }
-
-    .comparison-grid {
+    /* BLOQUE 2: EL PROBLEMA */
+    .comparison-cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: 1.5rem;
+      margin-top: 1rem;
     }
 
-    .comparison-col {
-      padding: 2.25rem;
+    .comp-card {
+      padding: 1.5rem;
       border-radius: var(--radius-md);
       border: 1px solid var(--border-color);
+      background: #FFFFFF;
     }
 
-    .comparison-col.today {
-      background-color: #FFFFFF;
+    .comp-card.today {
       border-top: 4px solid var(--text-muted);
     }
 
-    .comparison-col.proposed {
-      background-color: #FFFFFF;
+    .comp-card.proposed {
       border-top: 4px solid var(--brand-accent);
       box-shadow: var(--shadow-sm);
     }
 
-    .comparison-header {
-      margin-bottom: 1.5rem;
-    }
-
-    .comparison-header h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .comparison-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .comparison-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      font-size: 0.95rem;
-      color: var(--text-main);
-    }
-
-    .icon-bullet {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 0.1rem;
-    }
-
-    .today .icon-bullet {
-      background-color: #F1F5F9;
-      color: var(--text-muted);
-    }
-
-    .proposed .icon-bullet {
-      background-color: var(--brand-accent-light);
-      color: var(--brand-accent);
-    }
-
-    /* ¿QUÉ CAMBIA PARA LA DIRECCIÓN? */
-    .direction-impact-card {
-      background-color: var(--bg-alt);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 2.25rem;
-      margin-top: 1rem;
-    }
-
-    .direction-table-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 1.25rem;
-    }
-
-    .direction-side {
-      background: #FFFFFF;
-      padding: 1.5rem;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border-color);
-    }
-
-    .direction-side h4 {
-      font-size: 0.95rem;
+    .comp-card h3 {
+      font-size: 1.1rem;
       margin-bottom: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
     }
 
-    .direction-side ul {
+    .comp-list {
       list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      font-size: 0.9rem;
-      color: var(--text-main);
-    }
-
-    .direction-side li {
-      position: relative;
-      padding-left: 1.25rem;
-    }
-
-    .direction-side li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: var(--brand-accent);
-      font-weight: bold;
-    }
-
-    /* SECCIÓN: UTL Y ARQUITECTURA */
-    .capacity-diagram {
-      background: var(--bg-dark-surface);
-      border: 1px solid var(--border-dark);
-      border-radius: var(--radius-lg);
-      padding: 2.5rem;
-      margin-top: 2rem;
-    }
-
-    .capacity-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .capacity-box {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-dark);
-      padding: 0.9rem 1.4rem;
-      border-radius: var(--radius-sm);
-      color: var(--text-light);
-      font-weight: 600;
-      font-size: 0.95rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .capacity-box span.role {
-      font-size: 0.75rem;
-      font-weight: 400;
-      color: #38BDF8;
-      background: rgba(56, 189, 248, 0.1);
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
-    }
-
-    .capacity-connector {
-      text-align: center;
-      color: var(--brand-accent-hover);
-      font-size: 1rem;
-      line-height: 1;
-    }
-
-    .utl-clarification {
-      text-align: center;
-      margin-top: 1.75rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border-dark);
-      font-size: 0.9rem;
-      color: var(--text-light-muted);
-    }
-
-    /* SECCIÓN: MODELO DE CINCO PASOS */
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1.25rem;
-    }
-
-    .step-card {
-      background-color: #FFFFFF;
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-md);
-      padding: 1.75rem 1.25rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .step-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .step-number {
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--brand-accent);
-      margin-bottom: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .step-card h3 {
-      font-size: 1.15rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .step-card p {
-      font-size: 0.875rem;
-      line-height: 1.45;
-    }
-
-    /* SECCIÓN: PMO ÁGIL */
-    .pmo-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .pmo-item {
-      padding: 1.5rem;
-      background-color: #FFFFFF;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border-color);
-    }
-
-    .pmo-item h4 {
-      font-size: 1.05rem;
-      margin-bottom: 0.5rem;
-      color: var(--brand-primary);
-    }
-
-    .pmo-item p {
-      font-size: 0.9rem;
-    }
-
-    /* DEMOSTRACIÓN CONCEPTUAL DE PORTAFOLIO */
-    .portfolio-demo-wrapper {
-      margin-top: 3rem;
-      background: #FFFFFF;
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .demo-topbar {
-      background: var(--bg-alt);
-      padding: 0.9rem 1.5rem;
-      border-bottom: 1px solid var(--border-color);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .demo-topbar h4 {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--brand-primary);
-    }
-
-    .demo-tag {
-      font-size: 0.7rem;
-      background: #FEF3C7;
-      color: #92400E;
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
-      font-weight: 600;
-    }
-
-    .portfolio-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.875rem;
-      text-align: left;
-    }
-
-    .portfolio-table th {
-      background-color: #FAFAFA;
-      padding: 0.85rem 1.25rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .portfolio-table td {
-      padding: 1rem 1.25rem;
-      border-bottom: 1px solid var(--border-color);
-      color: var(--text-main);
-    }
-
-    .status-pill {
-      display: inline-block;
-      padding: 0.2rem 0.6rem;
-      border-radius: 9999px;
-      font-size: 0.75rem;
-      font-weight: 600;
-    }
-
-    .status-active { background: #E0F2FE; color: #0369A1; }
-    .status-planned { background: #F1F5F9; color: #475569; }
-
-    /* LÍNEAS TEMÁTICAS PRELIMINARES */
-    .theme-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .theme-card {
-      background: #FFFFFF;
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
-    }
-
-    .theme-card h4 {
-      font-size: 1.05rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .theme-card p {
-      font-size: 0.875rem;
-    }
-
-    /* SECCIÓN: IA & SIT MIRA */
-    .ia-conceptual-box {
-      background-color: #FFFFFF;
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 2.25rem;
-      margin-top: 2rem;
-    }
-
-    .ia-flow-sequence {
-      display: grid;
-      grid-template-columns: 1fr auto 2fr;
-      gap: 1.5rem;
-      align-items: center;
-    }
-
-    .ia-input-card {
-      background-color: var(--bg-alt);
-      padding: 1.5rem;
-      border-radius: var(--radius-md);
-      border-left: 4px solid var(--brand-accent);
-    }
-
-    .ia-steps-box {
-      background-color: var(--bg-alt);
-      padding: 1.25rem 1.5rem;
-      border-radius: var(--radius-md);
       display: flex;
       flex-direction: column;
       gap: 0.6rem;
     }
 
-    .ia-substep {
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--text-main);
+    .comp-list li {
+      font-size: 0.875rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
     }
 
-    .ia-substep span {
-      color: var(--brand-accent);
-      font-size: 0.75rem;
+    .bullet-icon {
+      font-size: 0.8rem;
       font-weight: 700;
     }
 
-    .ia-banner-note {
-      margin-top: 1.5rem;
-      background: #EFF6FF;
-      border: 1px solid #BFDBFE;
-      padding: 1rem 1.25rem;
-      border-radius: var(--radius-sm);
-      font-size: 0.85rem;
-      color: #1E40AF;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
+    .today .bullet-icon { color: var(--text-muted); }
+    .proposed .bullet-icon { color: var(--brand-accent); }
 
-    /* SECCIÓN: INDICADORES */
-    .indicators-hierarchy {
+    /* BLOQUE 3: LA PROPUESTA (4 PASOS) */
+    .steps-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-bottom: 2.5rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
     }
 
-    .hierarchy-card {
+    .step-box {
       background: #FFFFFF;
       border: 1px solid var(--border-color);
       border-radius: var(--radius-md);
-      padding: 1.75rem;
-      border-top: 4px solid var(--brand-accent);
+      padding: 1.25rem 1rem;
+      text-align: center;
     }
 
-    .hierarchy-card .h-tag {
+    .step-num {
       font-size: 0.75rem;
-      text-transform: uppercase;
       font-weight: 700;
       color: var(--brand-accent);
-      margin-bottom: 0.25rem;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
     }
 
-    .hierarchy-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
+    .step-box h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
     }
 
-    .hierarchy-card p {
-      font-size: 0.875rem;
+    .step-box p {
+      font-size: 0.8rem;
+      line-height: 1.35;
     }
 
-    .metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-    }
-
-    .metric-card {
-      background-color: #FFFFFF;
-      border: 1px solid var(--border-color);
+    .enablers-strip {
+      margin-top: 1.5rem;
+      background: #FFFFFF;
+      border: 1px dashed var(--border-color);
       border-radius: var(--radius-md);
-      padding: 1.5rem;
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
     }
 
-    .metric-category {
+    .enablers-title {
       font-size: 0.75rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: var(--brand-accent);
-      margin-bottom: 0.5rem;
     }
 
-    .metric-card h4 {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .metric-card p {
+    .enablers-desc {
       font-size: 0.85rem;
+      color: var(--text-main);
+      max-width: 640px;
     }
 
-    /* SECCIÓN: CALI 22 -> 13 -> 3 Y PILOTO */
-    .cali-scope-banner {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-dark);
-      border-radius: var(--radius-md);
-      padding: 1.75rem;
-      margin-bottom: 2.5rem;
+    /* BLOQUE 4: ¿QUÉ CAMBIA? */
+    .change-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr auto 1fr;
       gap: 1.5rem;
-      text-align: center;
+      align-items: center;
+      margin-top: 1.5rem;
     }
 
-    .scope-col {
-      padding: 0.75rem;
-    }
-
-    .scope-col .num {
-      font-size: 2.25rem;
-      font-weight: 800;
-      color: #38BDF8;
-      line-height: 1;
-      margin-bottom: 0.5rem;
-    }
-
-    .scope-col h4 {
-      font-size: 0.95rem;
-      color: var(--text-light);
-      margin-bottom: 0.25rem;
-    }
-
-    .scope-col p {
-      font-size: 0.8rem;
-      color: var(--text-light-muted);
-    }
-
-    .pilot-timeline {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .timeline-card {
-      background-color: var(--bg-dark-surface);
-      border: 1px solid var(--border-dark);
+    .change-box {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
       border-radius: var(--radius-md);
       padding: 1.5rem;
     }
 
-    .timeline-card .week-tag {
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #38BDF8;
+    .change-box h4 {
+      font-size: 0.85rem;
       text-transform: uppercase;
-      margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.85rem;
+      color: var(--text-muted);
     }
 
-    .timeline-card h4 {
-      font-size: 1.15rem;
+    .change-box.proposed-side h4 {
+      color: var(--brand-accent);
+    }
+
+    .change-box ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .change-arrow {
+      font-size: 1.5rem;
+      color: var(--brand-accent);
+      font-weight: 700;
+    }
+
+    .change-bottom-statement {
+      margin-top: 1.25rem;
+      text-align: center;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--brand-primary);
+    }
+
+    /* BLOQUE 5: PILOTO CALI 12 SEMANAS */
+    .cali-sequence {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.75rem;
+      background: var(--bg-dark-surface);
+      border: 1px solid var(--border-dark);
+      padding: 1.5rem 1rem;
+      border-radius: var(--radius-md);
+      text-align: center;
+      margin-top: 1.5rem;
+      align-items: center;
+    }
+
+    .cali-node .val {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #38BDF8;
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+
+    .cali-node .label {
+      font-size: 0.75rem;
       color: var(--text-light);
-      margin-bottom: 0.5rem;
+      line-height: 1.2;
     }
 
-    .timeline-card p {
+    .cali-node.focal {
+      background: rgba(56, 189, 248, 0.1);
+      padding: 0.75rem 0.5rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+
+    .cali-statement {
+      margin-top: 1.25rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-left: 3px solid #38BDF8;
+      padding: 0.85rem 1.25rem;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
       font-size: 0.85rem;
       color: var(--text-light-muted);
     }
 
-    .methodological-statement {
-      background: rgba(2, 128, 144, 0.15);
-      border-left: 3px solid #38BDF8;
-      padding: 1rem 1.5rem;
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      font-size: 0.9rem;
-      color: var(--text-light);
-      margin-bottom: 2.5rem;
-      font-style: italic;
-    }
-
-    .success-criteria-card {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border-dark);
-      border-radius: var(--radius-lg);
-      padding: 2rem;
-    }
-
-    .criteria-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-      margin-top: 1.25rem;
-    }
-
-    .criteria-item {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-size: 0.875rem;
-      color: var(--text-light);
-    }
-
-    .criteria-item span {
-      color: #38BDF8;
-      font-weight: 700;
-    }
-
-    /* CIERRE Y PROPUESTA DE DECISIÓN */
-    .decision-section {
-      background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
-      border-top: 1px solid var(--border-color);
+    /* BLOQUE 6: DECISIÓN */
+    .decision-wrapper {
       text-align: center;
-      padding: 6rem 0;
-    }
-
-    .decision-box {
-      max-width: 820px;
+      max-width: 760px;
       margin: 0 auto;
     }
 
-    .decision-box h2 {
-      font-size: 2.4rem;
+    .decision-wrapper h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .decision-lead {
+      font-size: 1.1rem;
+      color: var(--text-main);
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .decision-steps {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      margin: 1.5rem 0 2rem;
+      flex-wrap: wrap;
+    }
+
+    .dec-pill {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      padding: 0.6rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--brand-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .dec-pill span {
+      color: var(--brand-accent);
+      font-weight: 800;
+    }
+
+    .decision-tagline {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: var(--brand-accent);
       margin-bottom: 1.5rem;
     }
 
-    .decision-box p.lead {
-      font-size: 1.15rem;
-      color: var(--text-main);
-      margin-bottom: 1.25rem;
-      line-height: 1.55;
+    /* SECCIÓN DESPLEGABLE: CONOCER DETALLES DEL MODELO */
+    .secondary-details {
+      margin-top: 3.5rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 2rem;
     }
 
-    .after-pilot-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      margin: 2.5rem 0;
-      text-align: left;
-    }
-
-    .after-card {
+    details {
       background: #FFFFFF;
-      padding: 1.25rem;
-      border-radius: var(--radius-md);
       border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      margin-bottom: 0.75rem;
+      overflow: hidden;
     }
 
-    .after-card .num {
+    summary {
+      padding: 0.85rem 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--brand-primary);
+      cursor: pointer;
+      background: var(--bg-alt);
+      outline: none;
+      user-select: none;
+    }
+
+    summary:hover {
+      background: #F1F5F9;
+    }
+
+    .details-content {
+      padding: 1.25rem;
+      font-size: 0.85rem;
+      color: var(--text-main);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .mini-table {
+      width: 100%;
+      border-collapse: collapse;
       font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--brand-accent);
-      margin-bottom: 0.35rem;
+      margin-top: 0.5rem;
     }
 
-    .after-card h4 {
-      font-size: 0.95rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .after-card p {
-      font-size: 0.8rem;
-    }
-
-    .concluding-statement {
-      font-size: 1.05rem;
-      font-weight: 500;
-      color: var(--brand-accent);
-      border-left: 3px solid var(--brand-accent);
-      padding: 1.25rem 1.5rem;
-      margin: 2rem auto;
+    .mini-table th, .mini-table td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border-color);
       text-align: left;
-      max-width: 740px;
-      background: #F0FDFA;
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     }
 
-    /* FOOTER */
+    .mini-table th {
+      background: var(--bg-alt);
+    }
+
+    /* Footer */
     footer {
       border-top: 1px solid var(--border-color);
-      padding: 2.5rem 0;
+      padding: 2rem 0;
       background-color: #FFFFFF;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
     }
 
@@ -1055,56 +644,29 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
     }
 
     /* Responsive */
-    @media (max-width: 992px) {
-      .pipeline-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0.75rem;
-      }
-      .pipeline-step:not(:last-child)::after {
-        display: none;
-      }
-      .comparison-grid, .direction-table-grid, .after-pilot-grid {
-        grid-template-columns: 1fr;
-      }
-      .steps-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .theme-grid, .pmo-grid, .metrics-grid, .pilot-timeline, .indicators-hierarchy {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .ia-flow-sequence {
-        grid-template-columns: 1fr;
-      }
-      .hero-narrative {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
     @media (max-width: 768px) {
-      .nav-menu {
-        display: none;
-      }
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-      .hero-thesis {
-        font-size: 1.15rem;
-      }
-      .hero-narrative {
+      .nav-menu { display: none; }
+      .hero h1 { font-size: 1.85rem; }
+      .hero-thesis { font-size: 1.05rem; }
+      .comparison-cards, .steps-container, .change-grid {
         grid-template-columns: 1fr;
       }
-      .pipeline-grid, .cali-scope-banner {
-        grid-template-columns: 1fr;
+      .change-arrow {
+        text-align: center;
+        transform: rotate(90deg);
+        margin: -0.5rem 0;
       }
-      .steps-grid, .theme-grid, .pmo-grid, .metrics-grid, .pilot-timeline, .criteria-grid, .indicators-hierarchy {
+      .cali-sequence {
         grid-template-columns: 1fr;
+        gap: 1rem;
       }
       .footer-content {
         flex-direction: column;
-        gap: 1rem;
         text-align: center;
       }
     }
@@ -1112,662 +674,326 @@
 </head>
 <body>
 
-  <!-- Navegación Fija -->
+  <!-- Navegación Fija Sintética -->
   <header class="navbar">
     <div class="container navbar-container">
       <a href="#hero" class="nav-brand">
-        <span></span> Modelo Territorial UTL
+        <span></span> Propuesta Territorial UTL
       </a>
       <nav>
         <ul class="nav-menu">
           <li><a href="#hero" class="nav-link">Inicio</a></li>
-          <li><a href="#reto" class="nav-link">El Reto</a></li>
-          <li><a href="#propuesta" class="nav-link">Capacidad UTL</a></li>
-          <li><a href="#modelo" class="nav-link">Modelo</a></li>
-          <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
+          <li><a href="#problema" class="nav-link">Problema</a></li>
+          <li><a href="#propuesta" class="nav-link">Propuesta</a></li>
+          <li><a href="#cambio" class="nav-link">Qué Cambia</a></li>
           <li><a href="#piloto" class="nav-link">Piloto Cali</a></li>
         </ul>
       </nav>
-      <a href="#decision" class="btn btn-primary nav-cta">Evaluar Decisión</a>
+      <a href="#decision" class="btn btn-primary" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;">Decisión</a>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- BLOQUE 1 — HERO -->
   <section id="hero" class="hero">
     <div class="container">
       <div class="hero-content">
-        <span class="badge badge-primary">Propuesta de Fortalecimiento Institucional</span>
-        <h1>De la actividad al <span>impacto territorial</span></h1>
+        <span class="badge badge-primary">Propuesta Ejecutiva</span>
+        <h1>De la actividad al impacto territorial</h1>
         <div class="hero-thesis">
           «Gestionar las iniciativas sociales y políticas como proyectos.»
         </div>
-
-        <!-- Síntesis sin saturación técnica -->
-        <div class="hero-narrative">
-          <div class="narrative-item">
-            <div class="n-label">1. El Hecho</div>
-            <div class="n-desc">Existe permanente actividad y escucha en el territorio.</div>
-          </div>
-          <div class="narrative-item">
-            <div class="n-label">2. La Oportunidad</div>
-            <div class="n-desc">Estructurar la información para priorizar con método.</div>
-          </div>
-          <div class="narrative-item">
-            <div class="n-label">3. La Propuesta</div>
-            <div class="n-desc">Convertir necesidades en proyectos y resultados medibles.</div>
-          </div>
-          <div class="narrative-item">
-            <div class="n-label">4. Habilitadores</div>
-            <div class="n-desc">Portafolio, PMO Ágil, datos e IA como asistentes.</div>
-          </div>
-        </div>
+        <p class="hero-summary">
+          Una propuesta para convertir las necesidades del territorio en iniciativas priorizadas, proyectos gestionables y resultados medibles.
+        </p>
 
         <div class="hero-actions">
-          <a href="#propuesta" class="btn btn-primary">¿Cómo funcionaría en la UTL?</a>
+          <a href="#propuesta" class="btn btn-primary">Ver Propuesta</a>
           <a href="#piloto" class="btn btn-secondary">Ver Piloto Cali · 12 Semanas</a>
         </div>
-      </div>
 
-      <!-- Cadena de Valor Territorial (Columna Vertebral) -->
-      <div class="pipeline-wrapper">
-        <div class="pipeline-title">Columna Vertebral: Cadena de Valor Territorial</div>
-        <div class="pipeline-subtitle">
-          Una necesidad territorial no concluye en un acta o reunión; se transforma en iniciativa estructurada, se prioriza dentro de un portafolio, se gestiona como proyecto y se evalúa por su impacto verificable.
-        </div>
-        <div class="pipeline-grid">
-          <div class="pipeline-step highlight">
-            <div class="pipeline-node">Territorio</div>
-          </div>
-          <div class="pipeline-step">
-            <div class="pipeline-node">Diagnóstico</div>
-          </div>
-          <div class="pipeline-step">
-            <div class="pipeline-node">Priorización</div>
-          </div>
-          <div class="pipeline-step highlight">
-            <div class="pipeline-node">Portafolio</div>
-          </div>
-          <div class="pipeline-step">
-            <div class="pipeline-node">Proyectos</div>
-          </div>
-          <div class="pipeline-step">
-            <div class="pipeline-node">Resultados</div>
-          </div>
-          <div class="pipeline-step highlight">
-            <div class="pipeline-node">Valor Social</div>
-          </div>
+        <!-- Cadena de Valor Sintética -->
+        <div class="hero-flow">
+          <div class="flow-tag">Territorio</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-tag highlight">Priorizar</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-tag">Proyectos</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-tag">Seguimiento</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-tag highlight">Resultados</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-tag">Valor Social</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN: EL RETO / HOY VS PROPUESTA -->
-  <section id="reto" class="section">
+  <!-- BLOQUE 2 — EL PROBLEMA -->
+  <section id="problema" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-primary">Diagnóstico Operativo</span>
-        <h2>El reto no es hacer más. Es gestionar mejor.</h2>
+        <span class="badge badge-primary">Diagnóstico</span>
+        <h2>¿Qué queremos resolver?</h2>
         <p>
-          Las solicitudes e iniciativas comunitarias fluyen de manera continua y diversa. El desafío estratégico radica en pasar de un modelo centrado en tramitar eventos a un sistema enfocado en consolidar resultados verificables.
+          Las necesidades territoriales generan iniciativas, compromisos y actividades. El reto es convertir esa información en prioridades, proyectos y resultados que puedan ser gestionados y medidos.
         </p>
       </div>
 
-      <div class="challenge-container">
-        <!-- Comparativa visual: Hoy vs Propuesta -->
-        <div class="comparison-grid">
-          <div class="comparison-col today">
-            <div class="comparison-header">
-              <span class="badge" style="background:#F1F5F9; color:#475569;">Situación que se busca fortalecer</span>
-              <h3>Gestión Tradicional</h3>
-            </div>
-            <ul class="comparison-list">
-              <li>
-                <div class="icon-bullet">•</div>
-                <span><strong>Múltiples canales:</strong> Solicitudes recibidas por vías heterogéneas y formatos libres.</span>
-              </li>
-              <li>
-                <div class="icon-bullet">•</div>
-                <span><strong>Heterogeneidad:</strong> Necesidades con dispares niveles de detalle para su valoración.</span>
-              </li>
-              <li>
-                <div class="icon-bullet">•</div>
-                <span><strong>Seguimiento disperso:</strong> Trazabilidad compleja ante la multiplicidad de compromisos.</span>
-              </li>
-              <li>
-                <div class="icon-bullet">•</div>
-                <span><strong>Priorización intuitiva:</strong> Criterios difíciles de unificar entre diversas zonas.</span>
-              </li>
-              <li>
-                <div class="icon-bullet">•</div>
-                <span><strong>Foco en actividad:</strong> Medición orientada a reuniones efectuadas más que a metas alcanzadas.</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="comparison-col proposed">
-            <div class="comparison-header">
-              <span class="badge badge-primary">Capacidad Propuesta</span>
-              <h3>Gestión Orientada a Resultados</h3>
-            </div>
-            <ul class="comparison-list">
-              <li>
-                <div class="icon-bullet">✓</div>
-                <span><strong>Información estructurada:</strong> Registro estandarizado y trazable de cada requerimiento.</span>
-              </li>
-              <li>
-                <div class="icon-bullet">✓</div>
-                <span><strong>Diagnóstico objetivo:</strong> Identificación precisa de factibilidad y actores territoriales.</span>
-              </li>
-              <li>
-                <div class="icon-bullet">✓</div>
-                <span><strong>Priorización transparente:</strong> Matriz unificada de pertinencia e impacto social.</span>
-              </li>
-              <li>
-                <div class="icon-bullet">✓</div>
-                <span><strong>Portafolio visible:</strong> Consolidación ejecutiva del estado de avance en un solo tablero.</span>
-              </li>
-              <li>
-                <div class="icon-bullet">✓</div>
-                <span><strong>Proyectos y valor social:</strong> Metas claras, responsables fijos y evidencia comprobada.</span>
-              </li>
-            </ul>
-          </div>
+      <div class="comparison-cards">
+        <div class="comp-card today">
+          <span class="badge" style="background:#F1F5F9; color:#475569;">Situación a Fortalecer</span>
+          <h3>Gestión Tradicional</h3>
+          <ul class="comp-list">
+            <li><span class="bullet-icon">•</span> Información dispersa en múltiples canales</li>
+            <li><span class="bullet-icon">•</span> Iniciativas aisladas sin consolidación</li>
+            <li><span class="bullet-icon">•</span> Seguimiento manual dependiente de minutas</li>
+            <li><span class="bullet-icon">•</span> Priorización difícil de unificar</li>
+            <li><span class="bullet-icon">•</span> Actividad difícil de relacionar con resultados</li>
+          </ul>
         </div>
 
-        <!-- ¿Qué cambia para la dirección? -->
-        <div class="direction-impact-card">
-          <div class="section-header" style="margin-bottom: 1.5rem;">
-            <span class="badge badge-primary">Perspectiva Ejecutiva</span>
-            <h3 style="font-size: 1.4rem;">¿Qué cambia para la dirección?</h3>
-            <p style="font-size: 0.95rem;">El valor directo para la toma de decisiones institucionales y el seguimiento senatorial:</p>
-          </div>
-          <div class="direction-table-grid">
-            <div class="direction-side">
-              <h4 style="color: var(--text-muted);">Antes del modelo</h4>
-              <ul>
-                <li>Información territorial fragmentada en cuadernos, chats y minutas.</li>
-                <li>Monitoreo de compromisos dependiente de memoria o reportes manuales.</li>
-                <li>Dificultad para sustentar técnicamente por qué se atiende una zona antes que otra.</li>
-                <li>Reporte final concentrado en volumen de actividades realizadas.</li>
-              </ul>
-            </div>
-            <div class="direction-side" style="border-color: var(--brand-accent);">
-              <h4 style="color: var(--brand-accent);">Con el modelo incorporado</h4>
-              <ul>
-                <li><strong>Visibilidad inmediata:</strong> La dirección conoce el estado exacto de cada iniciativa en segundos.</li>
-                <li><strong>Decisiones con trazabilidad:</strong>
-                  <span style="font-size: 0.8rem; display: block; color: var(--text-muted);">Trazabilidad: Saber con precisión qué se solicitó, qué se decidió, quién es el responsable y qué resultado se generó.</span>
-                </li>
-                <li><strong>Defensa técnica y objetiva:</strong> Criterios claros de priorización fundamentados en evidencia.</li>
-                <li><strong>Rendición de cuentas sólida:</strong> Evidencia empírica de valor social e impacto real en el territorio.</li>
-              </ul>
-            </div>
-          </div>
+        <div class="comp-card proposed">
+          <span class="badge badge-primary">Capacidad Propuesta</span>
+          <h3>Gestión por Proyectos</h3>
+          <ul class="comp-list">
+            <li><span class="bullet-icon">✓</span> Información estructurada y homogénea</li>
+            <li><span class="bullet-icon">✓</span> Portafolio territorial visible en un tablero</li>
+            <li><span class="bullet-icon">✓</span> Proyectos gestionables con responsables fijos</li>
+            <li><span class="bullet-icon">✓</span> Seguimiento sistemático de avances</li>
+            <li><span class="bullet-icon">✓</span> Resultados medibles con impacto social</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN: QUÉ PROPONGO / UTL -->
-  <section id="propuesta" class="section section-dark">
-    <div class="container">
-      <div class="section-header center">
-        <span class="badge badge-dark">Arquitectura Organizacional</span>
-        <h2>Una capacidad de gestión, no una estructura paralela.</h2>
-        <p>
-          La propuesta busca fortalecer la capacidad existente sin plantear, en esta etapa piloto, una nueva estructura organizacional. La UTL preserva intacto el liderazgo y la definición de rumbos políticos.
-        </p>
-      </div>
-
-      <div class="capacity-diagram">
-        <div class="capacity-flow">
-          <div class="capacity-box">
-            <span>UTL — Unidad de Trabajo Legislativo</span>
-            <span class="role">Liderazgo y Decisión Política</span>
-          </div>
-          <div class="capacity-connector">↓</div>
-          <div class="capacity-box">
-            <span>Inteligencia Territorial y Diagnóstico</span>
-            <span class="role">Lectura Estructurada de Campo</span>
-          </div>
-          <div class="capacity-connector">↓</div>
-          <div class="capacity-box">
-            <span>Criterios de Priorización Objetiva</span>
-            <span class="role">Filtro de Factibilidad e Impacto</span>
-          </div>
-          <div class="capacity-connector">↓</div>
-          <div class="capacity-box">
-            <span>Portafolio de Iniciativas Territoriales</span>
-            <span class="role">Visión Consolidada</span>
-          </div>
-          <div class="capacity-connector">↓</div>
-          <div class="capacity-box" style="background: rgba(2, 128, 144, 0.25); border-color: var(--brand-accent);">
-            <span>PMO Ágil + Datos + IA (Habilitadores de Soporte)</span>
-            <span class="role">Facilitación y Asistencia</span>
-          </div>
-          <div class="capacity-connector">↓</div>
-          <div class="capacity-box">
-            <span>Resultados Verificables y Valor Social</span>
-            <span class="role">Impacto Territorial Demostrable</span>
-          </div>
-        </div>
-
-        <div class="utl-clarification">
-          La UTL conserva la conducción estratégica y el criterio político final. El modelo aporta una disciplina técnica de gestión orientada a articular solicitudes comunitarias con soluciones efectivas.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCIÓN: MODELO DE CINCO PASOS -->
-  <section id="modelo" class="section section-alt">
+  <!-- BLOQUE 3 — LA PROPUESTA -->
+  <section id="propuesta" class="section section-alt">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-primary">Método Operativo</span>
-        <h2>Del territorio a la decisión: Cinco pasos continuos</h2>
-        <p>Un ciclo metodológico cerrado para garantizar trazabilidad rigurosa desde la necesidad comunitaria hasta el beneficio entregado.</p>
+        <span class="badge badge-primary">Metodología</span>
+        <h2>Una forma diferente de gestionar el territorio</h2>
+        <p>Un ciclo continuo de cuatro pasos para asegurar trazabilidad de principio a fin:</p>
       </div>
 
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-number">Paso 01</div>
+      <div class="steps-container">
+        <div class="step-box">
+          <div class="step-num">01</div>
           <h3>Escuchar</h3>
-          <p>Recoger necesidades, propuestas y situaciones del territorio preservando el contacto humano y directo del liderazgo cívico.</p>
+          <p>Identificar necesidades y oportunidades comunitarias.</p>
         </div>
-        <div class="step-card">
-          <div class="step-number">Paso 02</div>
-          <h3>Estructurar</h3>
-          <p>Convertir la información recibida en registros comparables, homogéneos y técnicamente trazables para el análisis.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">Paso 03</div>
+        <div class="step-box">
+          <div class="step-num">02</div>
           <h3>Priorizar</h3>
-          <p>Decidir con criterios explícitos de impacto, urgencia y viabilidad qué iniciativas avanzan a fase de implementación.</p>
+          <p>Decidir qué iniciativas deben avanzar con criterios claros.</p>
         </div>
-        <div class="step-card">
-          <div class="step-number">Paso 04</div>
+        <div class="step-box">
+          <div class="step-num">03</div>
           <h3>Gestionar</h3>
-          <p>Convertir las iniciativas priorizadas en proyectos con objetivos precisos, responsables fijados, tiempos e indicadores de cumplimiento.</p>
+          <p>Convertir las iniciativas priorizadas en proyectos con metas y plazos.</p>
         </div>
-        <div class="step-card">
-          <div class="step-number">Paso 05</div>
+        <div class="step-box">
+          <div class="step-num">04</div>
           <h3>Medir</h3>
-          <p>Comprobar avances sistemáticos, evaluar resultados y evidenciar el valor público generado en el territorio.</p>
+          <p>Comprobar avances sistemáticos y valor social generado.</p>
+        </div>
+      </div>
+
+      <div class="enablers-strip">
+        <div class="enablers-title">Portafolio + PMO Ágil + Datos + IA</div>
+        <div class="enablers-desc">
+          La UTL mantiene el liderazgo y la decisión; el modelo aporta una disciplina de gestión para organizar, priorizar y hacer seguimiento.
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN: PMO ÁGIL Y PORTAFOLIO VISUAL -->
-  <section class="section">
+  <!-- BLOQUE 4 — ¿QUÉ CAMBIA? -->
+  <section id="cambio" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-primary">Capacidad Habilitadora</span>
-        <h2>Una PMO que facilita, no burocratiza.</h2>
-        <p>
-          La PMO (Oficina de Gestión de Proyectos) no constituye el fin de la propuesta ni una carga documental; es el mecanismo de soporte ágil que remueve obstáculos para que las iniciativas avancen a tiempo.
-        </p>
+        <span class="badge badge-primary">Impacto Directivo</span>
+        <h2>¿Qué cambia para la dirección?</h2>
       </div>
 
-      <div class="pmo-grid">
-        <div class="pmo-item">
-          <h4>Facilitar y Destrabar</h4>
-          <p>Remover cuellos de botella administrativos y agilizar las coordinaciones internas y externas.</p>
+      <div class="change-grid">
+        <div class="change-box">
+          <h4>De (Situación Actual)</h4>
+          <ul>
+            <li>Información dispersa</li>
+            <li>Seguimiento manual</li>
+            <li>Priorización difícil</li>
+            <li>Gestión enfocada en actividad</li>
+          </ul>
         </div>
-        <div class="pmo-item">
-          <h4>Priorizar con Criterio</h4>
-          <p>Proveer matrices objetivas para enfocar la energía y recursos donde mayor valor social se construya.</p>
-        </div>
-        <div class="pmo-item">
-          <h4>Dar Visibilidad Ejecutiva</h4>
-          <p>Consolidar el avance territorial en tableros claros para la lectura rápida de la senadora.</p>
-        </div>
-        <div class="pmo-item">
-          <h4>Identificar Riesgos</h4>
-          <p>Anticipar alertas territoriales o comunitarias antes de que se conviertan en retrasos críticos.</p>
-        </div>
-        <div class="pmo-item">
-          <h4>Coordinar Compromisos</h4>
-          <p>Asignar acuerdos claros y fechas límite a equipos técnicos y comunitarios.</p>
-        </div>
-        <div class="pmo-item">
-          <h4>Medir Resultados</h4>
-          <p>Asegurar que cada intervención concluya con evidencia de valor entregado y lecciones aprendidas.</p>
+
+        <div class="change-arrow">→</div>
+
+        <div class="change-box proposed-side" style="border-color: var(--brand-accent);">
+          <h4>A (Con el Modelo)</h4>
+          <ul>
+            <li>Información estructurada</li>
+            <li>Portafolio visible</li>
+            <li>Decisiones trazables</li>
+            <li>Resultados medibles y evidencia</li>
+          </ul>
         </div>
       </div>
 
-      <!-- DEMOSTRACIÓN VISUAL CONCEPTUAL DE PORTAFOLIO -->
-      <div class="portfolio-demo-wrapper">
-        <div class="demo-topbar">
-          <h4>Visualización de un Portafolio Territorial</h4>
-          <span class="demo-tag">Ejemplo conceptual — no corresponde a datos reales</span>
-        </div>
-        <div style="overflow-x: auto;">
-          <table class="portfolio-table">
-            <thead>
-              <tr>
-                <th>Iniciativa</th>
-                <th>Territorio</th>
-                <th>Prioridad</th>
-                <th>Responsable</th>
-                <th>Estado</th>
-                <th>Resultado Proyectado</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Iniciativa A:</strong> Entorno Seguro Escolar</td>
-                <td>Comuna Piloto X</td>
-                <td><span style="color: #B91C1C; font-weight: 600;">Alta</span></td>
-                <td>Equipo Territorial</td>
-                <td><span class="status-pill status-active">En ejecución</span></td>
-                <td>Capacidad preventiva instalada</td>
-              </tr>
-              <tr>
-                <td><strong>Iniciativa B:</strong> Formación Productiva</td>
-                <td>Comuna Piloto Y</td>
-                <td><span style="color: #D97706; font-weight: 600;">Media</span></td>
-                <td>Enlace Comunitario</td>
-                <td><span class="status-pill status-planned">Planificado</span></td>
-                <td>Unidades productivas conectadas</td>
-              </tr>
-              <tr>
-                <td><strong>Iniciativa C:</strong> Protección Cuenca Barrial</td>
-                <td>Comuna Piloto Z</td>
-                <td><span style="color: #B91C1C; font-weight: 600;">Alta</span></td>
-                <td>Comité Ambiental</td>
-                <td><span class="status-pill status-active">En curso</span></td>
-                <td>Punto crítico recuperado</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div style="padding: 0.85rem 1.25rem; font-size: 0.75rem; color: var(--text-muted); background: var(--bg-alt);">
-          * Formato ilustrativo para evidenciar cómo la dirección obtiene control y trazabilidad continua sin depender de informes de texto extensos.
-        </div>
+      <div class="change-bottom-statement">
+        El objetivo es pasar de gestionar actividad a gestionar resultados.
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN: PORTAFOLIO TEMÁTICO PRELIMINAR -->
-  <section id="portafolio" class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
-          <span class="badge badge-primary">Líneas Temáticas</span>
-          <span class="badge badge-warning">Hipótesis de Trabajo — Sujetas a Validación</span>
-        </div>
-        <h2>Un portafolio estructurado sobre necesidades territoriales</h2>
-        <p>
-          Líneas preliminares planteadas para organizar la respuesta temática. No constituyen un catálogo definitivo; su ratificación o ajuste se realizará mediante el diagnóstico territorial e investigación de campo.
-        </p>
-      </div>
-
-      <div class="theme-grid">
-        <div class="theme-card">
-          <h4>Adulto Mayor</h4>
-          <p>Propuestas de bienestar integral, redes de cuidado barrial, envejecimiento activo y fortalecimiento de espacios comunitarios protectores.</p>
-        </div>
-        <div class="theme-card">
-          <h4>Recuperación Ambiental</h4>
-          <p>Manejo comunitario de puntos críticos, protección de cuencas, pedagogía ambiental y jornadas barriales de cuidado del entorno.</p>
-        </div>
-        <div class="theme-card">
-          <h4>Prevención y Seguridad</h4>
-          <p>Iniciativas de convivencia ciudadana, entornos urbanos iluminados y articulación comunitaria para mitigar factores de vulnerabilidad.</p>
-        </div>
-        <div class="theme-card">
-          <h4>Unidades Productivas</h4>
-          <p>Acompañamiento a economías barriales, gestión de habilidades prácticas y encadenamiento para la autonomía productiva.</p>
-        </div>
-        <div class="theme-card">
-          <h4>Juventudes</h4>
-          <p>Generación de alternativas en liderazgo social, habilidades para el empleo y proyectos cívicos para arraigo territorial positivo.</p>
-        </div>
-        <div class="theme-card">
-          <h4>Respuesta Prioritaria</h4>
-          <p>Canal de gestión ágil para solicitudes territoriales urgentes que exigen articulación institucional inmediata.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCIÓN: INTELIGENCIA ARTIFICIAL & SIT MIRA -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-primary">Tecnología de Asistencia</span>
-        <h2>La Inteligencia Artificial como asistente de gestión</h2>
-        <p>
-          La IA no sustituye la deliberación política ni la sensibilidad humana del equipo. Su función se concentra en automatizar tareas operativas de transcripción, síntesis y estructuración de datos.
-        </p>
-      </div>
-
-      <div class="ia-conceptual-box">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.5rem;">
-          <div style="font-weight: 700; font-size: 0.85rem; color: var(--brand-primary); text-transform: uppercase; letter-spacing: 0.05em;">
-            SIT MIRA — Sistema Propuesto de Inteligencia Territorial
-          </div>
-          <span style="font-size: 0.75rem; background: var(--bg-alt); padding: 0.25rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color); color: var(--text-muted);">
-            Flujo conceptual propuesto para validación
-          </span>
-        </div>
-
-        <div class="ia-flow-sequence">
-          <div class="ia-input-card">
-            <h4 style="font-size: 0.95rem; margin-bottom: 0.35rem;">Reporte Territorial de Campo</h4>
-            <p style="font-size: 0.85rem;">Un gestor o voluntario envía una nota de voz o reporte informal describiendo una necesidad urgente en la comuna.</p>
-          </div>
-          <div style="font-size: 1.5rem; color: var(--brand-accent); text-align: center;">→</div>
-          <div class="ia-steps-box">
-            <div class="ia-substep"><span>01</span> Transcripción automatizada del registro de audio.</div>
-            <div class="ia-substep"><span>02</span> Clasificación preliminar por línea temática (ej. Seguridad / Adulto Mayor).</div>
-            <div class="ia-substep"><span>03</span> Geolocalización e identificación de la comuna y actores referidos.</div>
-            <div class="ia-substep"><span>04</span> Estructuración de ficha resumen de iniciativa.</div>
-            <div class="ia-substep" style="color: var(--brand-accent); font-weight: 600;"><span>05</span> Validación y revisión humana indispensable por el equipo técnico.</div>
-          </div>
-        </div>
-
-        <div class="ia-banner-note">
-          <strong style="white-space: nowrap;">Principio Clave:</strong>
-          <span>La IA propone, clasifica y resume borradores para reducir carga operativa. La decisión y priorización permanece íntegramente en las personas.</span>
-        </div>
-
-        <p style="margin-top: 1.25rem; font-size: 0.75rem; color: var(--text-muted); text-align: center;">
-          * SIT MIRA se presenta como una arquitectura conceptual que será puesta a prueba mediante instrumentos sencillos durante el piloto; no supone software previo desplegado ni automatizaciones opacas.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCIÓN: INDICADORES Y RESULTADOS -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-primary">Sistema de Medición</span>
-        <h2>No medir solamente actividad. Medir resultados y valor.</h2>
-        <p>
-          El éxito de la gestión no radica en la cantidad de visitas o fotografías recopiladas, sino en la capacidad verificada de transformar realidades comunitarias.
-        </p>
-      </div>
-
-      <!-- Jerarquía Actividad -> Resultado -> Valor Social -->
-      <div class="indicators-hierarchy">
-        <div class="hierarchy-card">
-          <div class="h-tag">Nivel 1</div>
-          <h3>Actividad</h3>
-          <p><strong>¿Qué hicimos?</strong> Número de reuniones, jornadas y encuentros comunitarios realizados.</p>
-        </div>
-        <div class="hierarchy-card">
-          <div class="h-tag">Nivel 2</div>
-          <h3>Resultado</h3>
-          <p><strong>¿Qué conseguimos?</strong> Proyectos ejecutados, acuerdos cumplidos y soluciones específicas entregadas.</p>
-        </div>
-        <div class="hierarchy-card" style="border-top-color: var(--brand-accent-hover);">
-          <div class="h-tag">Nivel 3</div>
-          <h3>Valor Social</h3>
-          <p><strong>¿Qué cambió?</strong> Capacidad comunitaria instalada, mayor confianza cívica y sostenibilidad de los cambios logrados.</p>
-        </div>
-      </div>
-
-      <!-- 4 Grupos de Indicadores -->
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <div class="metric-category">Gobernanza</div>
-          <h4>Trazabilidad y Calidad</h4>
-          <p>Porcentaje de iniciativas con expediente completo: registro, análisis de viabilidad, responsable y acta de cierre documentada.</p>
-        </div>
-        <div class="metric-card">
-          <div class="metric-category">Participación</div>
-          <h4>Microcompromisos</h4>
-          <p>Tasa de continuidad del voluntariado y cumplimiento de pequeños acuerdos asumidos colaborativamente en el territorio.</p>
-        </div>
-        <div class="metric-card">
-          <div class="metric-category">Gestión</div>
-          <h4>Cierre de Proyectos</h4>
-          <p>Monitoreo del cumplimiento en cronograma, control preventivo de desvíos y tasa efectiva de iniciativas concluidas a tiempo.</p>
-        </div>
-        <div class="metric-card">
-          <div class="metric-category">Valor Social</div>
-          <h4>Percepción y Sostenibilidad</h4>
-          <p>Evaluación objetiva del bienestar generado en la comunidad y de la perdurabilidad de la intervención realizada.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCIÓN: PILOTO CALI 12 SEMANAS -->
+  <!-- BLOQUE 5 — PILOTO CALI -->
   <section id="piloto" class="section section-dark">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-dark">Alcance Metodológico</span>
-        <h2>Probar antes de escalar: Piloto Cali · 12 Semanas</h2>
-        <p>
-          Una propuesta metodológica estricta que delimita con precisión el campo de acción para garantizar mediciones confiables sin dispersar esfuerzos:
-        </p>
+        <span class="badge badge-dark">Validación Controlada</span>
+        <h2>Probar antes de escalar · Piloto Cali (12 Semanas)</h2>
+        <p>Un enfoque delimitado para generar evidencia empírica sin comprometer estructuras:</p>
       </div>
 
-      <!-- Delimitación Cali 22 -> 13 -> 3 -->
-      <div class="cali-scope-banner">
-        <div class="scope-col">
-          <div class="num">22</div>
-          <h4>Comunas Urbanas de Cali</h4>
-          <p>Dimensión total del municipio de Santiago de Cali.</p>
+      <div class="cali-sequence">
+        <div class="cali-node">
+          <div class="val">22</div>
+          <div class="label">Comunas urbanas de Cali</div>
         </div>
-        <div class="scope-col">
-          <div class="num">13</div>
-          <h4>Comunas con Estructura MIRA</h4>
-          <p>Base identificada con presencia y tejido operativo comunitario.</p>
+        <div class="cali-node">
+          <div class="val">13</div>
+          <div class="label">Comunas con estructura MIRA identificada</div>
         </div>
-        <div class="scope-col" style="background: rgba(56, 189, 248, 0.08); border-radius: var(--radius-sm);">
-          <div class="num" style="color: #FFFFFF;">3</div>
-          <h4 style="color: #38BDF8;">Comunas Foco para el Piloto</h4>
-          <p>Muestra controlada sujeta a validación técnica para la prueba de 12 semanas.</p>
+        <div class="cali-node focal">
+          <div class="val">3</div>
+          <div class="label">Comunas foco para el piloto<br><small style="color:#94A3B8;">(Sujetas a validación)</small></div>
         </div>
-      </div>
-
-      <!-- Cronograma 4 Fases -->
-      <div class="pilot-timeline">
-        <div class="timeline-card">
-          <div class="week-tag">Semanas 1 – 2</div>
-          <h4>Diagnóstico y Línea Base</h4>
-          <p>Levantamiento del estado actual, mapeo de necesidades reales y caracterización de actores en las 3 comunas foco.</p>
+        <div class="cali-node">
+          <div class="val" style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; padding-top: 0.5rem;">Validar</div>
+          <div class="label">Líneas y prioridades territoriales</div>
         </div>
-        <div class="timeline-card">
-          <div class="week-tag">Semanas 3 – 4</div>
-          <h4>Codiseño y Priorización</h4>
-          <p>Ajuste colaborativo de criterios de viabilidad con el equipo UTL y estructuración inicial del portafolio.</p>
-        </div>
-        <div class="timeline-card">
-          <div class="week-tag">Semanas 5 – 10</div>
-          <h4>Ejecución en Ciclos Cortos</h4>
-          <p>Gestión activa de proyectos priorizados mediante revisiones ágiles y asistencia para captura estandarizada de datos.</p>
-        </div>
-        <div class="timeline-card">
-          <div class="week-tag">Semanas 11 – 12</div>
-          <h4>Evaluación y Aprendizaje</h4>
-          <p>Medición de indicadores de valor, balance de desempeño y dictamen técnico sobre viabilidad de replicabilidad futura.</p>
+        <div class="cali-node">
+          <div class="val" style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; padding-top: 0.5rem;">Medir</div>
+          <div class="label">Resultados y valor social observable</div>
         </div>
       </div>
 
-      <!-- Declaración Metodológica Prudente -->
-      <div class="methodological-statement">
-        «El piloto no parte de la premisa de que el modelo funciona. Busca generar evidencia objetiva para determinar si funciona, bajo qué condiciones operativas y si resulta pertinente escalarlo a otros territorios.»
-      </div>
-
-      <!-- Criterios de Éxito para Evaluar -->
-      <div class="success-criteria-card">
-        <h3 style="color: var(--text-light); font-size: 1.15rem; margin-bottom: 0.35rem;">Criterios Objetivos de Evaluación del Piloto</h3>
-        <p style="color: var(--text-light-muted); font-size: 0.85rem;">¿Cómo sabremos si el modelo generó resultados positivos al término de las 12 semanas?</p>
-        <div class="criteria-grid">
-          <div class="criteria-item"><span>✓</span> Línea base territorial consolidada y medible.</div>
-          <div class="criteria-item"><span>✓</span> Iniciativas priorizadas con metodología transparente.</div>
-          <div class="criteria-item"><span>✓</span> Trazabilidad documental completa de principio a fin.</div>
-          <div class="criteria-item"><span>✓</span> Reducción verificada en la sobrecarga administrativa.</div>
-          <div class="criteria-item"><span>✓</span> Continuidad activa y motivación del voluntariado.</div>
-          <div class="criteria-item"><span>✓</span> Valor social tangible generado en las comunidades.</div>
-        </div>
+      <div class="cali-statement">
+        <strong>Principio metodológico:</strong> El piloto no parte de la premisa de que el modelo funciona; busca generar evidencia para determinar si funciona, qué debe ajustarse y si es pertinente escalarlo.
       </div>
     </div>
   </section>
 
-  <!-- CIERRE Y PROPUESTA DE DECISIÓN -->
-  <section id="decision" class="section decision-section">
+  <!-- BLOQUE 6 — DECISIÓN -->
+  <section id="decision" class="section">
     <div class="container">
-      <div class="decision-box">
+      <div class="decision-wrapper">
         <span class="badge badge-primary">Ruta Estratégica</span>
-        <h2>Propuesta de Decisión</h2>
-        <p class="lead">
-          Se propone evaluar un <strong>piloto de 12 semanas en Cali</strong> para validar un modelo de gestión territorial estructurado en proyectos, portafolio, PMO Ágil, datos e Inteligencia Artificial como asistentes.
-        </p>
-        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.5;">
-          El propósito no es implementar una nueva estructura de manera inmediata, sino generar evidencia rigurosa para determinar si una gestión organizada optimiza el seguimiento de compromisos, fortalece la toma de decisiones senatorial y permite demostrar resultados y valor social con certeza.
+        <h2>Una decisión basada en evidencia</h2>
+        <p class="decision-lead">
+          Se propone evaluar un <strong>piloto de 12 semanas en Cali</strong> para validar un modelo de gestión territorial estructurado en proyectos, portafolio y herramientas de apoyo como PMO Ágil, datos e Inteligencia Artificial.
         </p>
 
-        <!-- Entregables al final del piloto -->
-        <div class="after-pilot-grid">
-          <div class="after-card">
-            <div class="num">01</div>
-            <h4>Evidencia de Resultados</h4>
-            <p>Datos auditables sobre compromisos cerrados e impacto alcanzado.</p>
-          </div>
-          <div class="after-card">
-            <div class="num">02</div>
-            <h4>Lecciones Aprendidas</h4>
-            <p>Hallazgos prácticos sobre dinámicas comunitarias y operativas de campo.</p>
-          </div>
-          <div class="after-card">
-            <div class="num">03</div>
-            <h4>Modelo Operativo Ajustado</h4>
-            <p>Guías y protocolos refinados con base en la experiencia directa.</p>
-          </div>
-          <div class="after-card">
-            <div class="num">04</div>
-            <h4>Dictamen de Continuidad</h4>
-            <p>Recomendación fundada en hechos para decidir si conviene o no escalar.</p>
-          </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">
+          Entregables al final del piloto:
+        </p>
+        <div class="decision-steps">
+          <div class="dec-pill"><span>01</span> Resultados verificables</div>
+          <div class="dec-pill"><span>02</span> Aprendizajes de campo</div>
+          <div class="dec-pill"><span>03</span> Modelo operativo ajustado</div>
+          <div class="dec-pill"><span>04</span> Decisión de continuidad</div>
         </div>
 
-        <div class="concluding-statement">
-          «No se trata de hacer más. Se trata de saber qué hacer, por qué hacerlo, dónde hacerlo, quién debe hacerlo y qué resultado se está generando.»
+        <div class="decision-tagline">
+          PROBAR → MEDIR → DECIDIR
         </div>
 
-        <div style="margin-top: 2.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-          <a href="#hero" class="btn btn-primary">Evaluar Piloto Cali · Volver al Inicio</a>
-          <a href="#reto" class="btn btn-secondary">Revisar Diagnóstico Operativo</a>
+        <div>
+          <a href="#hero" class="btn btn-primary" style="font-size: 1rem; padding: 0.85rem 1.85rem;">
+            Evaluar Piloto Cali
+          </a>
         </div>
+      </div>
+
+      <!-- DESPLEGABLES SECUNDARIOS (Información de soporte sin recargar) -->
+      <div class="secondary-details">
+        <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-bottom: 0.75rem;">
+          Información complementaria del modelo (Clic para desplegar):
+        </p>
+
+        <details>
+          <summary>¿Qué significa gestionar el territorio como un portafolio?</summary>
+          <div class="details-content">
+            <p style="margin-bottom: 0.5rem;">Permite consolidar múltiples iniciativas en una vista unificada para decidir prioridades:</p>
+            <table class="mini-table">
+              <thead>
+                <tr>
+                  <th>Iniciativa</th>
+                  <th>Territorio</th>
+                  <th>Prioridad</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Iniciativa A</td>
+                  <td>Comuna X</td>
+                  <td>Alta</td>
+                  <td>En curso</td>
+                </tr>
+                <tr>
+                  <td>Iniciativa B</td>
+                  <td>Comuna Y</td>
+                  <td>Media</td>
+                  <td>Planificado</td>
+                </tr>
+                <tr>
+                  <td>Iniciativa C</td>
+                  <td>Comuna Z</td>
+                  <td>Alta</td>
+                  <td>En ejecución</td>
+                </tr>
+              </tbody>
+            </table>
+            <small style="color: var(--text-muted); display: block; margin-top: 0.4rem;">* Ejemplo conceptual — no son datos reales.</small>
+          </div>
+        </details>
+
+        <details>
+          <summary>Líneas temáticas preliminares (Hipótesis de trabajo)</summary>
+          <div class="details-content">
+            <p>Líneas sujetas a validación mediante diagnóstico en el piloto: Adulto Mayor, Recuperación Ambiental, Prevención y Seguridad, Unidades Productivas, Juventudes y Respuesta Territorial Prioritaria.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>El rol de la PMO Ágil y la Inteligencia Artificial</summary>
+          <div class="details-content">
+            <p><strong>PMO Ágil:</strong> Facilita la priorización, coordinación, seguimiento y medición. No es el fin del modelo, sino el mecanismo de apoyo.</p>
+            <p style="margin-top: 0.5rem;"><strong>IA como asistente de gestión:</strong> Reporte territorial → Organización de datos → Clasificación → Apoyo al seguimiento → Revisión humana indispensable. La IA organiza borradores; la decisión permanece en las personas.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-muted);">* <strong>SIT MIRA:</strong> Sistema Propuesto de Inteligencia Territorial (arquitectura conceptual para validación durante el piloto).</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Marco institucional con la UTL</summary>
+          <div class="details-content">
+            <p>La propuesta busca fortalecer la capacidad existente sin plantear, en esta etapa piloto, una nueva estructura organizacional.</p>
+          </div>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER INSTITUCIONAL -->
+  <!-- FOOTER -->
   <footer>
     <div class="container footer-content">
       <div>
-        <strong>Propuesta Técnica de Fortalecimiento Institucional</strong> · Unidad de Trabajo Legislativo (UTL)
+        <strong>Propuesta Ejecutiva de Gestión Territorial</strong> · Unidad de Trabajo Legislativo (UTL)
       </div>
       <div>
-        Territorio Piloto: Santiago de Cali, Valle del Cauca · Documento Metodológico Ejecutivo
+        Territorio Piloto: Santiago de Cali · 12 Semanas
       </div>
     </div>
   </footer>
@@ -1778,26 +1004,25 @@
       const sections = document.querySelectorAll('section[id]');
       const navLinks = document.querySelectorAll('.nav-menu .nav-link');
 
-      function highlightNav() {
+      window.addEventListener('scroll', () => {
+        let currentId = '';
         const scrollY = window.pageYOffset;
 
-        sections.forEach(current => {
-          const sectionHeight = current.offsetHeight;
-          const sectionTop = current.offsetTop - 110;
-          const sectionId = current.getAttribute('id');
-
-          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            navLinks.forEach(link => {
-              link.classList.remove('active');
-              if (link.getAttribute('href') === `#${sectionId}`) {
-                link.classList.add('active');
-              }
-            });
+        sections.forEach(section => {
+          const sectionHeight = section.offsetHeight;
+          const sectionTop = section.offsetTop - 90;
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            currentId = section.getAttribute('id');
           }
         });
-      }
 
-      window.addEventListener('scroll', highlightNav);
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${currentId}`) {
+            link.classList.add('active');
+          }
+        });
+      });
     });
   </script>
 </body>
